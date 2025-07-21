@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveCare Auto Hub | Car Services & Sales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Manifest -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Service Worker Registration -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => console.log('ServiceWorker registered'))
+      .catch(err => console.log('ServiceWorker registration failed: ', err));
+  });
+}
+</script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">DriveCare<span>Auto Hub</span></a>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#buy">Buy Cars</a></li>
+                    <li><a href="#sell">Sell Your Car</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Premium Car Services & Sales</h1>
+                    <p class="tagline">Quality maintenance and trusted vehicles for every journey</p>
+                    <a href="#services" class="cta-button">Book a Service</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://www.shutterstock.com/image-photo/hand-mechanic-holding-car-service-600nw-2340377479.jpg" alt="Car service"  width="600" height="400">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Engine Repair</h3>
+                        <p>Expert diagnostics and repair for all engine types</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>Painting</h3>
+                        <p>Professional auto painting and bodywork</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛑</div>
+                        <h3>Brakes</h3>
+                        <p>Complete brake system inspection and service</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚗</div>
+                        <h3>Tyres</h3>
+                        <p>Tire sales, balancing, alignment and repairs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="buy" class="buy-cars">
+            <div class="container">
+                <h2>Featured Cars</h2>
+                <div class="cars-grid">
+                    <div class="car-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/2018_Toyota_Camry_%28ASV70R%29_Ascent_sedan_%282018-08-27%29_01.jpg/330px-2018_Toyota_Camry_%28ASV70R%29_Ascent_sedan_%282018-08-27%29_01.jpg" alt="Toyota Camry"  width="300" height="200">
+                        <h3>Toyota Camry 2020</h3>
+                        <p class="price">$22,500</p>
+                        <button class="inquiry-btn">Make Inquiry</button>
+                    </div>
+                    <div class="car-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Honda_Civic_Type_R_%28FK%3B_France%29_front_view.jpg" alt="Honda Civic"  width="300" height="200">
+                        <h3>Honda Civic 2019</h3>
+                        <p class="price">$18,900</p>
+                        <button class="inquiry-btn">Make Inquiry</button>
+                    </div>
+                    <div class="car-card">
+                        <img src="https://www.evoindia.com/content/servlet/RDESController?command=rdm.Picture&sessionId=RDWEBBX5AI9VFVMJNGEQRJ21XXULKQXNDDCF0&app=rdes&partner=ev&type=7&uid=jweutEO0OmJ5HCFPZYx5jhVlRPXHbpoq" alt="Ford Mustang"  width="300" height="200">
+                        <h3>Ford Mustang 2021</h3>
+                        <p class="price">$31,200</p>
+                        <button class="inquiry-btn">Make Inquiry</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sell" class="sell-car">
+            <div class="container">
+                <h2>Sell Your Car</h2>
+                <form id="sell-form" class="sell-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact Number</label>
+                        <input type="tel" id="contact" name="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Car Model</label>
+                        <input type="text" id="model" name="model" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <input type="number" id="year" name="year" min="1990" max="2023" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Upload Image</label>
+                        <input type="file" id="image" name="image" accept="image/*">
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Details</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="why-us" class="why-us">
+            <div class="container">
+                <h2>Why Choose DriveCare</h2>
+                <div class="benefits">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🏆</div>
+                        <h3>10+ Years Experience</h3>
+                        <p>Trusted by thousands of customers</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💲</div>
+                        <h3>Fair Pricing</h3>
+                        <p>No hidden charges, competitive rates</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🛠️</div>
+                        <h3>Genuine Parts</h3>
+                        <p>Only OEM and high-quality components</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⏱️</div>
+                        <h3>Quick Service</h3>
+                        <p>Most repairs completed within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>123 Auto Street, Motor City</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: info@drivecarehub.com</p>
+                        <a href="https://wa.me/1234567890" class="whatsapp-btn">Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>DriveCare Auto Hub</h3>
+                    <p>Your trusted partner for car services and sales since 2010.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#buy">Buy Cars</a></li>
+                        <li><a href="#sell">Sell Your Car</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Open: Mon-Sat 8AM-6PM</p>
+                    <p>123 Auto Street, Motor City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DriveCare Auto Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

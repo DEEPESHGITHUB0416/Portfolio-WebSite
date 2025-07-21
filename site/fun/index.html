@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Vibes | Interactive Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <audio loop id="bg-music" src="assets/audio/background.mp3"></audio>
+        <button id="music-toggle" class="music-btn pulse">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="theme-btn">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="theme-ball"></span>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo" data-text="CosmicVibes">CosmicVibes</a>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active"><span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><span>About</span></a></li>
+                <li><a href="#services" class="nav-link"><span>Services</span></a></li>
+                <li><a href="#portfolio" class="nav-link"><span>Portfolio</span></a></li>
+                <li><a href="#team" class="nav-link"><span>Team</span></a></li>
+                <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typewriter" data-text="Create,Explore,Inspire"></span>
+            </h1>
+            <p class="hero-subtitle">We craft digital experiences that captivate and inspire</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary rainbow-hover">Get Started</a>
+                <a href="#portfolio" class="btn btn-secondary glass">View Work</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-animation"></div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-box">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <div class="section-subtitle">Who we are and what we stand for</div>
+            </div>
+            <div class="about-content">
+                <div class="about-image reveal-left">
+                    <div class="image-wrapper glass">
+                        <img src="assets/images/about.webp" alt="About Cosmic Vibes">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="shape-dots"></div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h3>Creating Digital Magic Since 2020</h3>
+                    <p>We're a passionate team of designers, developers, and creatives dedicated to pushing the boundaries of digital experiences.</p>
+                    <div class="about-features">
+                        <div class="feature-box neon-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Innovative</h4>
+                            <p>Always exploring new ideas</p>
+                        </div>
+                        <div class="feature-box neon-box">
+                            <i class="fas fa-heart"></i>
+                            <h4>Passionate</h4>
+                            <p>We love what we do</p>
+                        </div>
+                        <div class="feature-box neon-box">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Dynamic</h4>
+                            <p>Fast-paced and agile</p>
+                        </div>
+                    </div>
+                    <a href="#team" class="btn btn-tertiary floating">Meet the Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-box">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <div class="section-subtitle">What we can do for you</div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="card-inner">
+                        <div class="card-front glass" style="background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);">
+                            <div class="card-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>UI/UX Design</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>UI/UX Design</h3>
+                            <p>Beautiful interfaces with intuitive user experiences that delight your customers.</p>
+                            <ul>
+                                <li>User Research</li>
+                                <li>Wireframing</li>
+                                <li>Prototyping</li>
+                                <li>UI Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-up">
+                    <div class="card-inner">
+                        <div class="card-front glass" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+                            <div class="card-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Web Development</h3>
+                            <p>High-performance websites built with modern technologies for optimal results.</p>
+                            <ul>
+                                <li>Frontend Development</li>
+                                <li>Backend Development</li>
+                                <li>E-commerce</li>
+                                <li>Web Applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-up">
+                    <div class="card-inner">
+                        <div class="card-front glass" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
+                            <div class="card-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>App Development</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>App Development</h3>
+                            <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                            <ul>
+                                <li>iOS Development</li>
+                                <li>Android Development</li>
+                                <li>React Native</li>
+                                <li>Flutter</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-up">
+                    <div class="card-inner">
+                        <div class="card-front glass" style="background: linear-gradient(135deg, #ffc3a0 0%, #ffafbd 100%);">
+                            <div class="card-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Digital Marketing</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Digital Marketing</h3>
+                            <p>Strategies to grow your online presence and reach your target audience.</p>
+                            <ul>
+                                <li>SEO</li>
+                                <li>Social Media</li>
+                                <li>PPC Advertising</li>
+                                <li>Content Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-up">
+                    <div class="card-inner">
+                        <div class="card-front glass" style="background: linear-gradient(135deg, #a6c1ee 0%, #fbc2eb 100%);">
+                            <div class="card-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3>Motion Graphics</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Motion Graphics</h3>
+                            <p>Engaging animations and video content to tell your brand's story.</p>
+                            <ul>
+                                <li>2D Animation</li>
+                                <li>3D Animation</li>
+                                <li>Explainer Videos</li>
+                                <li>Motion Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal-up">
+                    <div class="card-inner">
+                        <div class="card-front glass" style="background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);">
+                            <div class="card-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>AI Solutions</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>AI Solutions</h3>
+                            <p>Leverage artificial intelligence to automate and enhance your business.</p>
+                            <ul>
+                                <li>Chatbots</li>
+                                <li>Machine Learning</li>
+                                <li>Computer Vision</li>
+                                <li>Predictive Analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section-box">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <div class="section-subtitle">See our recent work</div>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal-up" data-category="web">
+                    <div class="portfolio-card glass">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/project1.webp" alt="Web Project">
+                            <div class="portfolio-overlay">
+                                <h3>E-commerce Platform</h3>
+                                <p>Full-stack online store with payment integration</p>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span class="tag">Web</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal-up" data-category="app">
+                    <div class="portfolio-card glass">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/project2.webp" alt="App Project">
+                            <div class="portfolio-overlay">
+                                <h3>Fitness Tracker</h3>
+                                <p>Mobile app for workout tracking and nutrition</p>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span class="tag">App</span>
+                            <span class="tag">Health</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal-up" data-category="design">
+                    <div class="portfolio-card glass">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/project3.webp" alt="Design Project">
+                            <div class="portfolio-overlay">
+                                <h3>Brand Identity</h3>
+                                <p>Complete visual identity for tech startup</p>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Branding</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal-up" data-category="web">
+                    <div class="portfolio-card glass">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/project4.webp" alt="Web Project">
+                            <div class="portfolio-overlay">
+                                <h3>Corporate Website</h3>
+                                <p>Modern responsive website for financial firm</p>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span class="tag">Web</span>
+                            <span class="tag">Corporate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal-up" data-category="app">
+                    <div class="portfolio-card glass">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/project5.webp" alt="App Project">
+                            <div class="portfolio-overlay">
+                                <h3>Social Network</h3>
+                                <p>Community platform for creative professionals</p>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span class="tag">App</span>
+                            <span class="tag">Social</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item reveal-up" data-category="branding">
+                    <div class="portfolio-card glass">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/project6.webp" alt="Branding Project">
+                            <div class="portfolio-overlay">
+                                <h3>Product Packaging</h3>
+                                <p>Sustainable packaging design for organic brand</p>
+                                <a href="#" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-tags">
+                            <span class="tag">Branding</span>
+                            <span class="tag">Packaging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta reveal-up">
+                <a href="#contact" class="btn btn-primary rainbow-hover">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section-box">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Team</h2>
+                <div class="section-subtitle">The creative minds behind the magic</div>
+            </div>
+            <div class="team-grid">
+                <div class="team-member reveal-up">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="assets/images/team/member1.webp" alt="Team Member">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Alex Johnson</h3>
+                            <p>Creative Director</p>
+                            <div class="member-skills">
+                                <span>UI/UX</span>
+                                <span>Branding</span>
+                                <span>Art Direction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member reveal-up">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="assets/images/team/member2.webp" alt="Team Member">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Sarah Chen</h3>
+                            <p>Lead Developer</p>
+                            <div class="member-skills">
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member reveal-up">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="assets/images/team/member3.webp" alt="Team Member">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Marcus Lee</h3>
+                            <p>Motion Designer</p>
+                            <div class="member-skills">
+                                <span>Animation</span>
+                                <span>3D Modeling</span>
+                                <span>Video Editing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member reveal-up">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="assets/images/team/member4.webp" alt="Team Member">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Elena Rodriguez</h3>
+                            <p>Marketing Specialist</p>
+                            <div class="member-skills">
+                                <span>SEO</span>
+                                <span>Content Strategy</span>
+                                <span>Social Media</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-box">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-subtitle">Let's create something amazing together</div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <div class="info-box glass">
+                        <h3>Contact Information</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Creative Street, Design City, DC 10001</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>hello@cosmicvibes.com</p>
+                        </div>
+                        <div class="contact-social">
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <div class="map-wrapper glass">
+                            <!-- Map placeholder - would be replaced with actual map embed -->
+                            <div class="map-placeholder">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <p>Interactive Map Here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form reveal-right">
+                    <form id="contactForm" class="form-box glass">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary floating">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h3>Cosmic Vibes</h3>
+                        <p>Creating digital experiences that inspire and captivate audiences worldwide.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">App Development</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Motion Graphics</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter for the latest updates.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Cosmic Vibes. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="music-player.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

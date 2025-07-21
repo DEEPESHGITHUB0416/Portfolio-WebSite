@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepesh| Creative Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="/site/style.css">
+   
+     
+</head>
+<body>
+    <!-- Canvas Background -->
+    <canvas id="canvas-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="glass nav-container">
+            <a href="#" class="logo">DEEPESH<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Turning <span>Vision</span> Into Digital Reality</h1>
+            <div class="typed-text">I create immersive web experiences</div>
+            <p>Frontend developer &  crafting boundary-pushing digital solutions that blend innovation with purpose.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-outline">Let's Connect</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+             
+                
+                <div class="fun-facts">
+                    <div class="glass fact-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Code Artisan</h4>
+                        <p>Believe in crafting code like art - elegant, purposeful, and beautiful</p>
+                    </div>
+                    <div class="glass fact-card">
+                        <i class="fas fa-mountain"></i>
+                        <h4>Adventure Seeker</h4>
+                        <p>Find inspiration in mountain trails and ocean waves</p>
+                    </div>
+                    <div class="glass fact-card">
+                        <i class="fas fa-coffee"></i>
+                        <h4>Tea Connoisseur</h4>
+                        <p>Perfecting pour-over techniques since 2016</p>
+                    </div>
+                    <div class="glass fact-card">
+                        <i class="fas fa-coins"></i>
+                        <h4>Coin Collector</h4>
+                        <p>Enthusitic to collect and restore coins.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-visual">
+                <div class="timeline">
+                    <div class="timeline-item">
+                       
+                    </div>
+                    <div class="timeline-item">
+                        <div class="glass timeline-content">
+                            <h3>Feb 2025- Mar 2025</h3>
+                            <p>CyberSecurity Traniee-Redington</p>
+                            <p>Understood network security fundamentals, threat modeling, and malware defense.Worked with real-world scenarios for ethical hacking and vulnerability analysis.
+</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="glass timeline-content">
+                            <h3>JAN 2024 - MAR 2024</h3>
+                            <p>C Programming Intern - Simplilearn SkillUp </p>
+                            <p>Practiced memory management, loops, functions, and basic problem-solving using C.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="glass timeline-content">
+                            <h3>2022-2026</h3>
+                            <p>B.Tech Computer Science Engineering Specialised in AI</p>
+                            <p>Learning today's code to build tomorrow's intelligence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="glass skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <p>C,JavaScript</p>
+                </div>
+                <div class="glass skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>Web Technologies</h3>
+                    <p>HTML5, CSS3, JavaScript, React.js,</p>
+                </div>
+                <div class="glass skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <p>MySQL, MongoDB,</p>
+                </div>
+                <div class="glass skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Concepts</h3>
+                    <p>DSA, OOPs, Problem Solving, REST APIs</p>
+                </div>
+                <div class="glass skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Platforms</h3>
+                    <p>Git, GitHub, VS Code</p>
+                </div>
+            </div>
+            
+            <div class="orbiting-icons">
+                <div class="orbit">
+                    <div class="glass orbit-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                </div>
+                <div class="orbit" style="width: 80%; height: 80%; top: 10%; left: 10%; animation-duration: 40s;">
+                    <div class="glass orbit-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+                <div class="orbit" style="width: 60%; height: 60%; top: 20%; left: 20%; animation-duration: 50s;">
+                    <div class="glass orbit-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                </div>
+                <div class="orbit" style="width: 40%; height: 40%; top: 30%; left: 30%; animation-duration: 60s;">
+                    <div class="glass orbit-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                </div>
+                <div class="glass orbit-center">
+                    <i class="fas fa-stars"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="glass project-card">
+                    <div class="project-image">
+                        <img src="https://row.gymshark.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F8urtyqugdt2l%2F1oIrMoqckYTE96ekt5ECyT%2F51471e1e09c39541c1564bc164bd9b06%2Fdesktop-how-often-to-go-to-the-gym.jpg&w=3840&q=85" alt="GYM">
+                    </div>
+                    <div class="project-content">
+                        <h3>Iron Peak Fitness</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">JS</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <p>A  platform to explore workouts, connect with trainers, and join classes.</p>
+                        <div class="project-links">
+                            <a href="site/gym" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <!-- <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass project-card">
+                    <div class="project-image">
+                        <img src="https://www.aha.org/sites/default/files/2023-05/Retail-Clinics-Target-Chronic-Diseases.png" alt="Aurora">
+                    </div>
+                    <div class="project-content">
+                        <h3>MediCare Family Clinic</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                        <p>A responsive clinic platform to manage appointments, services, and patient care.</p>
+                        <div class="project-links">
+                            <a href="site/Clinic/ind.html" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <!-- <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass project-card">
+                    <div class="project-image">
+                        <img src="https://brightonpanelworks.com.au/wp-content/uploads/2022/05/mechanic-in-overalls-repairing-car-in-auto-repair-2021-08-29-22-51-18-utc-1-1080x675.jpg" alt="Echo VR">
+                    </div>
+                    <div class="project-content">
+                        <h3>DriveCare Auto Hub </h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                        <p>A complete automotive platform with listings, repairs, and expert support</p>
+                        <div class="project-links">
+                            <a href="site/car" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <!-- <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="glass contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="glass contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mail.id">deepesh0416@gmail.com</a>
+                        </div>
+                    </div>
+                    
+            <!-- 
+                    
+                    <div class="contact-item">
+                        <div class="glass contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/alexmorgan">alexmorgan</a>
+                        </div>
+                    </div> -->
+                    
+                    <div class="contact-item">
+                        <div class="glass contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Jaipur Rajasthan India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="form-status" style="margin-top:10px;"></div>
+                        <!-- <div class="voice-note">
+                            <i class="fas fa-microphone-alt"></i>
+                            <span>Or send a voice note</span>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="glass footer-content">
+                <a href="#" class="logo">Deepesh</a>
+                <div class="social-links">
+                    <a href="https://github.com/DEEPESHGITHUB0416" class="social-link">
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    <!-- <a href="#" class="social-link">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a> -->
+                    <a href="https://www.linkedin.com/in/deepesh-fs/" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="copyright">© 2025 Deepesh. All rights reserved.</p>
+                <p class="easter-egg">Click here to discover my secret project</p>
+            </div>
+        </div>
+    </footer>
+<link rel="script" href="/site/script.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<div id="starfield"></div>
+
+<script>
+  // Scene setup
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({ alpha: true });
+  
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.getElementById('starfield').appendChild(renderer.domElement);
+  
+  // Create stars
+  const starsGeometry = new THREE.BufferGeometry();
+  const starsMaterial = new THREE.PointsMaterial({
+    color: 0xffffff,
+    size: 0.1,
+    transparent: true
+  });
+  
+  const starsVertices = [];
+  for (let i = 0; i < 10000; i++) {
+    const x = (Math.random() - 0.5) * 2000;
+    const y = (Math.random() - 0.5) * 2000;
+    const z = (Math.random() - 0.5) * 2000;
+    starsVertices.push(x, y, z);
+  }
+  
+  starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
+  const starField = new THREE.Points(starsGeometry, starsMaterial);
+  scene.add(starField);
+  
+  camera.position.z = 1;
+  
+  // Animation loop
+  function animate() {
+    requestAnimationFrame(animate);
+    starField.rotation.x += 0.0001;
+    starField.rotation.y += 0.0001;
+    renderer.render(scene, camera);
+  }
+  
+  animate();
+  
+  // Handle resize
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+</script>
+
+<style>
+  #starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  #starfield canvas {
+    display: block;
+  }
+</style>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("4C7XYzEdzxeIaUIl3"); // Your public key
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_8z1ac0d', 'template_je0ge3o', this)
+      .then(function() {
+        document.getElementById('form-status').innerText = "Message sent!";
+        document.getElementById('contactForm').reset();
+      }, function(error) {
+        document.getElementById('form-status').innerText = "Failed to send!";
+      });
+  });
+</script>
+    
+</body>
+</html>
